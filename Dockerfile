@@ -52,6 +52,3 @@ RUN groupadd -r pwuser && useradd -r -g pwuser -G audio,video pwuser \
 
 # 8. (Optional) Install XVFB if there's a need to run browsers in headful mode
 RUN apt-get update && apt-get install -y xvfb
-
-# Run everything after as non-privileged user.
-USER pwuser
